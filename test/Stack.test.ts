@@ -37,7 +37,7 @@ tap.test('Stack', (t) => {
         t.end();
     });
 
-    t.test('returns the most recently pushed item', (t) => {
+    t.test('pops the most recently pushed item', (t) => {
         const myStack = new Stack<string>();
 
         myStack.push('bananas');
@@ -50,7 +50,7 @@ tap.test('Stack', (t) => {
     });
 
     t.test(
-        'returns the most recently pushed item after a bunch of pushes and pulls',
+        'pops the most recently pushed item after a bunch of pushes and pops',
         (t) => {
             const myStack = new Stack<string>();
 

@@ -49,29 +49,30 @@ tap.test('Queue', (t) => {
         t.end();
     });
 
-    t.test(
-        'returns the most recently pushed item after a bunch of items move through the queue',
-        (t) => {
-            const myQueue = new Queue<string>();
+    t.test('moves a bunch of items through the queue', (t) => {
+        const myQueue = new Queue<string>();
 
-            myQueue.enqueue('bananas');
-            myQueue.enqueue('oranges');
-            myQueue.enqueue('papaya');
+        myQueue.enqueue('bananas');
+        myQueue.enqueue('oranges');
+        myQueue.enqueue('papaya');
 
-            let first = myQueue.dequeue();
-            let second = myQueue.dequeue();
+        let first = myQueue.dequeue();
+        let second = myQueue.dequeue();
 
-            myQueue.enqueue('fiddle');
-            myQueue.enqueue('diddle');
-            myQueue.enqueue('dee');
+        myQueue.enqueue('fiddle');
+        myQueue.enqueue('diddle');
+        myQueue.enqueue('dee');
 
-            t.equal(first, 'bananas');
-            t.equal(second, 'oranges');
+        t.equal(first, 'bananas');
+        t.equal(second, 'oranges');
+        t.equal(myQueue.size, 4);
 
-            t.equal(myQueue.size, 4);
-            t.end();
-        }
-    );
+        let third = myQueue.dequeue();
+        t.equal(third, 'papaya');
+        t.equal(myQueue.size, 3);
+
+        t.end();
+    });
 
     t.end();
 });
