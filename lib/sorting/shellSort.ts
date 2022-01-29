@@ -4,7 +4,7 @@ export function shellSort(collection: number[]): void {
     let n = collection.length;
     let h = 1;
 
-    while (h < n / 3) {
+    while (h < n / Math.floor(3)) {
         h = Math.floor(3 * h) + 1;
     }
 
