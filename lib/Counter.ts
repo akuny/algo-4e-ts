@@ -14,11 +14,4 @@ export class Counter {
     get tally() {
         return this.n;
     }
-
-    get toString() {
-        const num = this.n === 0 ? 'zero' : this.n;
-        const times = this.n === 1 ? 'time' : 'times';
-
-        return `Counter "${this.id}" has been clicked ${num} ${times}.`;
-    }
 }
