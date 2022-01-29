@@ -1,5 +1,5 @@
 import tap from 'tap';
-import { Stack } from '../lib/Stack';
+import { Stack } from '../lib/ADT/Stack';
 
 tap.test('Stack', (t) => {
     t.test('knows when it is empty', (t) => {

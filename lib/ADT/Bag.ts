@@ -1,5 +1,5 @@
 import { Node } from './Node';
-import { IBag } from '../ts/interfaces';
+import { IBag } from '../../ts/interfaces';
 
 export class Bag<T> implements IBag<T> {
     private head: Node<T> | null;

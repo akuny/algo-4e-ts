@@ -1,11 +1,11 @@
 import tap from 'tap';
-import { selectionSort } from '../lib/sorting/selectionSort';
+import { insertionSort } from '../lib/sorting/insertionSort';
 
-tap.test('selectionSort', (t) => {
+tap.test('insertionSort', (t) => {
     t.test('sorts', (t): void => {
         let myArray = [9, 7, 5, 3, 1];
 
-        selectionSort(myArray);
+        insertionSort(myArray);
 
         t.same(myArray, [1, 3, 5, 7, 9]);
         t.end();

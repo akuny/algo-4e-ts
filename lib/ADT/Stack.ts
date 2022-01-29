@@ -1,5 +1,5 @@
 import { Node } from './Node';
-import { IStack } from '../ts/interfaces';
+import { IStack } from '../../ts/interfaces';
 
 export class Stack<T> implements IStack<T> {
     private head: Node<T> | null;

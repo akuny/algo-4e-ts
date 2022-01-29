@@ -1,5 +1,5 @@
 import tap from 'tap';
-import { Queue } from '../lib/Queue';
+import { Queue } from '../lib/ADT/Queue';
 
 tap.test('Queue', (t) => {
     t.test('knows when it is empty', (t) => {

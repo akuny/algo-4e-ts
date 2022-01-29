@@ -1,5 +1,5 @@
 import tap from 'tap';
-import { Bag } from '../lib/Bag';
+import { Bag } from '../lib/ADT/Bag';
 
 tap.test('Bar', (t) => {
     t.test('knows when it is empty', (t) => {

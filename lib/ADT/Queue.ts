@@ -1,5 +1,5 @@
 import { Node } from './Node';
-import { IQueue } from '../ts/interfaces';
+import { IQueue } from '../../ts/interfaces';
 
 export class Queue<T> implements IQueue<T> {
     private head: Node<T> | null;

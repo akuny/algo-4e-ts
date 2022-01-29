@@ -1,4 +1,6 @@
-export function selectionSort<T>(collection: T[]): T[] {
+import { swap } from './helpers';
+
+export function selectionSort(collection: number[]): number[] {
     let n = collection.length;
 
     for (let i = 0; i < n; i++) {
@@ -11,11 +13,6 @@ export function selectionSort<T>(collection: T[]): T[] {
             swap(collection, i, min);
         }
     }
-    return collection;
-}
 
-function swap<T>(arr: T[], i: number, j: number) {
-    let cached = arr[i];
-    arr[i] = arr[j];
-    arr[j] = cached;
+    return collection;
 }
