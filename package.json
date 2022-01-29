@@ -1,0 +1,30 @@
+{
+    "name": "typescript-template",
+    "version": "1.0.0",
+    "description": "Template for a plain old TypeScript project",
+    "main": "index.js",
+    "author": "akuny",
+    "license": "MIT",
+    "scripts": {
+        "start": "node build/lib/index.js",
+        "test": "tap --ts",
+        "dev": "ts-node-dev --respawn --transpile-only ./lib/index.ts",
+        "build": "tsc --build",
+        "clean": "tsc --build --clean"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.5",
+        "@babel/preset-env": "^7.15.6",
+        "@babel/preset-typescript": "^7.15.0",
+        "@types/node": "^17.0.10",
+        "@types/tap": "^15.0.5",
+        "tap": "^15.1.6",
+        "ts-node-dev": "^1.1.8"
+    },
+    "dependencies": {
+        "dotenv": "^14.2.0"
+    },
+    "tap": {
+        "coverage-map": "coverage-map.js"
+    }
+}
