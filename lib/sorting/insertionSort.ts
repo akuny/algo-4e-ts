@@ -1,6 +1,6 @@
 import { swap } from './helpers';
 
-export function insertionSort(collection: number[]): number[] {
+export function insertionSort(collection: number[]): void {
     let n = collection.length;
 
     for (let i = 0; i < n; i++) {
@@ -8,6 +8,4 @@ export function insertionSort(collection: number[]): number[] {
             swap(collection, j, j - 1);
         }
     }
-
-    return collection;
 }

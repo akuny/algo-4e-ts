@@ -1,6 +1,6 @@
 import { swap } from './helpers';
 
-export function selectionSort(collection: number[]): number[] {
+export function selectionSort(collection: number[]): void {
     let n = collection.length;
 
     for (let i = 0; i < n; i++) {
@@ -13,6 +13,4 @@ export function selectionSort(collection: number[]): number[] {
             swap(collection, i, min);
         }
     }
-
-    return collection;
 }
