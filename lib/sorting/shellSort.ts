@@ -18,6 +18,7 @@ export function shellSort(collection: number[]): void {
                 swap(collection, j, j - h);
             }
         }
+
         h = Math.floor(h / 3);
     }
 }

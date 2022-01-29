@@ -2,7 +2,7 @@ import tap from 'tap';
 import { insertionSort } from '../lib/sorting/insertionSort';
 
 tap.test('insertionSort', (t) => {
-    t.test('sorts', (t): void => {
+    t.test('sorts', (t) => {
         let myArray = [9, 7, 5, 3, 1];
 
         insertionSort(myArray);

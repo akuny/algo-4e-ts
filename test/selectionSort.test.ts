@@ -2,7 +2,7 @@ import tap from 'tap';
 import { selectionSort } from '../lib/sorting/selectionSort';
 
 tap.test('selectionSort', (t) => {
-    t.test('sorts', (t): void => {
+    t.test('sorts', (t) => {
         let myArray = [9, 7, 5, 3, 1];
 
         selectionSort(myArray);

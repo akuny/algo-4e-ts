@@ -2,7 +2,7 @@ import tap from 'tap';
 import { shellSort } from '../lib/sorting/shellSort';
 
 tap.test('shellSort', (t) => {
-    t.test('sorts', (t): void => {
+    t.test('sorts', (t) => {
         let myArray = [9, 7, 5, 3, 1];
 
         shellSort(myArray);
