@@ -2,14 +2,14 @@ import tap from 'tap';
 import { Bag } from '../lib/Bag';
 
 tap.test('Bar', (t) => {
-    t.test('reports its status when empty', (t) => {
+    t.test('knows when it is empty', (t) => {
         const myBag = new Bag<string>();
 
         t.ok(myBag.isEmpty);
         t.end();
     });
 
-    t.test('reports its status when not empty', (t) => {
+    t.test('knows when it is not empty', (t) => {
         const myBag = new Bag<string>();
 
         myBag.add('bananas');
@@ -18,7 +18,7 @@ tap.test('Bar', (t) => {
         t.end();
     });
 
-    t.test('reports its length when not empty', (t) => {
+    t.test('returns its length when it is not empty', (t) => {
         const myBag = new Bag<string>();
 
         myBag.add('bananas');
