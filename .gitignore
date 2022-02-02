@@ -1,5 +1,6 @@
 .env
 .nyc_output
 .vscode
+doc
 node_modules
 build
